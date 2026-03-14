@@ -3,20 +3,18 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-
-// Pages to be created
-const About = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>About Us</h2><p>Page coming soon!</p></div>;
-const Board = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Board</h2><p>Page coming soon!</p></div>;
-const History = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>History</h2><p>Page coming soon!</p></div>;
-const Mentorship = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Mentorship</h2><p>Page coming soon!</p></div>;
-const Academic = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Academic Support</h2><p>Page coming soon!</p></div>;
-const Cultural = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Cultural Empowerment</h2><p>Page coming soon!</p></div>;
-const Gallery = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Gallery</h2><p>Page coming soon!</p></div>;
-const Blog = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Blog</h2><p>Page coming soon!</p></div>;
-const Newsletter = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Newsletter</h2><p>Page coming soon!</p></div>;
-const Events = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Events</h2><p>Page coming soon!</p></div>;
-const Contact = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Contact Us</h2><p>Page coming soon!</p></div>;
-const Sponsor = () => <div className="container" style={{padding: '120px 0', minHeight: '60vh'}}><h2>Sponsor</h2><p>Page coming soon!</p></div>;
+import About from './pages/About';
+import Board from './pages/Board';
+import History from './pages/History';
+import Mentorship from './pages/Mentorship';
+import Academic from './pages/Academic';
+import Cultural from './pages/Cultural';
+import Gallery from './pages/Gallery';
+import Blog from './pages/Blog';
+import Newsletter from './pages/Newsletter';
+import Events from './pages/Events';
+import Contact from './pages/Contact';
+import Sponsor from './pages/Sponsor';
 
 // Scroll to top on route change
 function ScrollToTop() {
