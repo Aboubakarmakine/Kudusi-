@@ -21,8 +21,8 @@ export default function Cultural() {
             <div className="prose">
               <h2>Heritage as Strength</h2>
               <p>At Kudusi, we believe cultural identity is not a barrier — it is a source of strength, resilience, and pride. Our Cultural Empowerment program is designed to help students stay connected to their roots while building bridges to the future.</p>
-              <h3>Language Classes</h3>
-              <p>We offer classes in African languages including Masalit and others, helping students connect with their heritage and communicate across generations.</p>
+              <h3>Kudusi Academy: Language Classes</h3>
+              <p>We offer free language and cultural education courses including Beginner &amp; Intermediate Arabic, Beginner Turkish, and ESL (English as a Second Language). Learn directly from our dedicated instructors: Zainab Yusuf, Ahmed Malik, Fatima Khan, and Lisa Chen.</p>
               <h3>Community Events</h3>
               <p>From cultural celebrations and heritage days to storytelling circles and traditional arts — our events bring communities together in joyful, meaningful ways.</p>
               <h3>Cultural Awareness Programs</h3>

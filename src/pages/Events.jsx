@@ -22,44 +22,34 @@ export default function Events() {
           </header>
           <div className="events-list">
             <article className="event-card fade-up">
-              <div className="event-date-badge"><div className="ev-month">MAR</div><div className="ev-day">15</div></div>
+              <div className="event-date-badge"><div className="ev-month">NOV</div><div className="ev-day">30</div></div>
               <div className="event-body">
                 <div className="event-tag">Workshop</div>
-                <h3 className="event-title">College Prep Kickoff: Application &amp; Scholarship Workshop</h3>
-                <p className="event-desc">A free session to walk students through the college application process, scholarship search, and FAFSA navigation — hosted by Kudusi mentors.</p>
-                <div className="event-meta"><span>📍 Online via Zoom</span><span>🕐 3:00 PM – 5:00 PM EST</span><span>🆓 Free</span></div>
+                <h3 className="event-title">Visual Arts Workshop</h3>
+                <p className="event-desc">Join us for a hands-on visual arts workshop exploring traditional African art forms, open to all skill levels.</p>
+                <div className="event-meta"><span>📍 Phoenix Community Center</span><span>🕐 2:00 PM – 5:00 PM MST</span><span>🆓 Free</span></div>
               </div>
               <div className="event-cta"><a href="https://kudusi.org/?fluent-booking=calendar&host=mentorship-team&event=60min" className="btn btn-outline-gold" target="_blank" rel="noopener noreferrer">Register Free</a></div>
             </article>
             <article className="event-card fade-up" style={{ transitionDelay: '0.1s' }}>
-              <div className="event-date-badge"><div className="ev-month">APR</div><div class="ev-day">05</div></div>
+              <div className="event-date-badge"><div className="ev-month">DEC</div><div className="ev-day">14</div></div>
               <div className="event-body">
                 <div className="event-tag">Cultural</div>
-                <h3 className="event-title">Cultural Heritage Day 2026</h3>
-                <p className="event-desc">A community celebration of African cultures — featuring music, traditional foods, language workshops, storytelling, and arts. All are welcome!</p>
-                <div className="event-meta"><span>📍 Phoenix Community Center, AZ</span><span>🕐 12:00 PM – 6:00 PM MST</span><span>🆓 Free Admission</span></div>
+                <h3 className="event-title">Cultural Heritage Day</h3>
+                <p className="event-desc">A magnificent community celebration of our shared heritage — featuring traditional music, language immersion, and authentic storytelling.</p>
+                <div className="event-meta"><span>📍 Kudusi Center</span><span>🕐 12:00 PM – 6:00 PM MST</span><span>🆓 Free Admission</span></div>
               </div>
               <div className="event-cta"><Link to="/contact" className="btn btn-outline-gold">Express Interest</Link></div>
             </article>
             <article className="event-card fade-up" style={{ transitionDelay: '0.2s' }}>
-              <div className="event-date-badge"><div className="ev-month">APR</div><div className="ev-day">22</div></div>
+              <div className="event-date-badge"><div className="ev-month">JAN</div><div className="ev-day">15</div></div>
               <div className="event-body">
                 <div className="event-tag">Mentorship</div>
-                <h3 className="event-title">Mentor Mixer: Meet Your Future Guide</h3>
-                <p className="event-desc">An informal networking event where students meet potential mentors, hear their career stories, and learn how to get matched with a Kudusi mentor.</p>
-                <div className="event-meta"><span>📍 Online + Phoenix, AZ</span><span>🕐 6:00 PM – 8:00 PM MST</span><span>🆓 Free</span></div>
+                <h3 className="event-title">Youth Leadership Forum</h3>
+                <p className="event-desc">An interactive webinar focused on youth empowerment, building essential leadership skills, and guiding the rising generation into successful careers.</p>
+                <div className="event-meta"><span>📍 Online / Webinar</span><span>🕐 6:00 PM – 8:00 PM EST</span><span>🆓 Free</span></div>
               </div>
               <div className="event-cta"><a href="https://kudusi.org/?fluent-booking=calendar&host=mentorship-team&event=60min" className="btn btn-outline-gold" target="_blank" rel="noopener noreferrer">Register Free</a></div>
-            </article>
-            <article className="event-card fade-up">
-              <div className="event-date-badge"><div className="ev-month">MAY</div><div className="ev-day">10</div></div>
-              <div className="event-body">
-                <div className="event-tag">Masalit Language</div>
-                <h3 className="event-title">Masalit Language Beginner Series — Session 1</h3>
-                <p className="event-desc">A free online beginner's class in the Masalit language — open to all interested students, community members, and families looking to reconnect with their heritage.</p>
-                <div className="event-meta"><span>📍 Online via Zoom</span><span>🕐 5:00 PM – 6:30 PM EST</span><span>🆓 Free</span></div>
-              </div>
-              <div className="event-cta"><Link to="/contact" className="btn btn-outline-gold">Sign Up</Link></div>
             </article>
           </div>
 

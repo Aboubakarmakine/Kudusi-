@@ -28,10 +28,30 @@ export default function Home() {
             </div>
             <div className="hero-image-wrap fade-up" style={{ transitionDelay: '0.2s' }}>
               <img src="/assets/images/dc-protest.jpg" alt="Students thriving with Kudusi support" className="hero-img" loading="eager" fetchPriority="high" />
-              <div className="hero-float-card">
-                <div className="card-stat"><span className="stat-icon">🎓</span> 500+ Students Served</div>
-                <div className="card-stat"><span className="stat-icon">📚</span> 3 Core Programs</div>
-                <div className="card-stat"><span className="stat-icon">💛</span> 100% Free, Always</div>
+            </div>
+          </div>
+          <div className="hero-stats-bar fade-up" style={{ transitionDelay: '0.4s' }}>
+            <div className="hero-stat-item">
+              <span className="stat-icon">🎓</span>
+              <div className="stat-details">
+                <span className="stat-strong">500+</span>
+                <span className="stat-light">Students Served</span>
+              </div>
+            </div>
+            <div className="hero-stat-divider"></div>
+            <div className="hero-stat-item">
+              <span className="stat-icon">📚</span>
+              <div className="stat-details">
+                <span className="stat-strong">3</span>
+                <span className="stat-light">Core Programs</span>
+              </div>
+            </div>
+            <div className="hero-stat-divider"></div>
+            <div className="hero-stat-item">
+              <span className="stat-icon">💛</span>
+              <div className="stat-details">
+                <span className="stat-strong">100%</span>
+                <span className="stat-light">Free, Always</span>
               </div>
             </div>
           </div>

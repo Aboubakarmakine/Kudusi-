@@ -18,7 +18,7 @@ export default function Mentorship() {
       <section className="content-section">
         <div className="container">
           <div className="two-col fade-up">
-            <img src="/assets/images/dc-protest-about.jpg" alt="Student meeting with a mentor" loading="lazy" style={{ borderRadius: '24px', boxShadow: 'var(--shadow-card)' }} />
+            <img src="/assets/images/omaha-group.jpg" alt="Student meeting with a mentor" loading="lazy" style={{ borderRadius: '24px', boxShadow: 'var(--shadow-card)' }} />
             <div className="prose">
               <h2>Real Mentors. Real Guidance.</h2>
               <p>Our mentorship program connects students and young adults with experienced professionals who are passionate about giving back. Every mentor is vetted, dedicated, and available on your schedule — at no cost to you.</p>
@@ -31,6 +31,67 @@ export default function Mentorship() {
               <h3>Financial Aid Support</h3>
               <p>Navigating FAFSA, grants, and aid packages can be overwhelming. Our advisors break it down step by step so you know exactly what you're eligible for.</p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="content-section" style={{ background: 'var(--color-cream)' }}>
+        <div className="container">
+          <header className="section-header fade-up">
+            <span className="eyebrow">Our Experts</span>
+            <h2 className="section-title">Meet Our Mentors</h2>
+          </header>
+          <div className="team-grid">
+            {[
+              { id: '1', initials: 'IH', name: 'Ilias Hassan', role: 'Banking and Finance', delay: '0s' },
+              { id: '2', initials: 'NA', name: 'Nejmadin Ahmed', role: 'Economics & Accounting', delay: '0.1s' },
+              { id: '3', initials: 'MM', name: 'Mouna Mohammed', role: 'Biology | Lab Technician', delay: '0.2s' },
+              { id: '4', initials: 'SA', name: 'Sadia Adam', role: 'Biology | Certified Phlebotomist', delay: '0s' }
+            ].map((mentor, i) => (
+              <div key={mentor.id} className="team-card fade-up" style={mentor.delay !== '0s' ? { transitionDelay: mentor.delay } : {}}>
+                <div style={{ 
+                  width: '100%', 
+                  height: '240px', 
+                  background: `linear-gradient(135deg, rgba(8,8,12,1) 0%, rgba(${40 + (i * 10) % 30},${35 + (i * 15) % 30},${30 + (i * 20) % 40},1) 100%)`, 
+                  display: 'flex', 
+                  alignItems: 'center', 
+                  justifyContent: 'center', 
+                  position: 'relative',
+                  overflow: 'hidden'
+                }}>
+                  <div style={{
+                    position: 'absolute',
+                    inset: 0,
+                    opacity: 0.15,
+                    backgroundImage: 'radial-gradient(circle at 50% 50%, var(--color-gold) 0%, transparent 70%)'
+                  }}></div>
+                  <div style={{
+                    width: '90px',
+                    height: '90px',
+                    borderRadius: '50%',
+                    background: 'rgba(255, 255, 255, 0.05)',
+                    backdropFilter: 'blur(16px)',
+                    WebkitBackdropFilter: 'blur(16px)',
+                    border: '1px solid rgba(197, 160, 58, 0.3)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: 'var(--color-gold)',
+                    fontFamily: 'var(--font-display)',
+                    fontSize: '32px',
+                    fontWeight: 900,
+                    boxShadow: '0 8px 24px rgba(0,0,0,0.4)',
+                    position: 'relative',
+                    zIndex: 2
+                  }}>
+                    {mentor.initials}
+                  </div>
+                </div>
+                <div className="team-card-body" style={{ textAlign: 'center', padding: '28px 20px' }}>
+                  <div className="team-name" style={{ fontSize: '18px', marginBottom: '6px' }}>{mentor.name}</div>
+                  <div className="team-role" style={{ fontSize: '12px', letterSpacing: '0.1em' }}>{mentor.role}</div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

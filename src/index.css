@@ -183,27 +183,27 @@ a.contact-value:hover{color:var(--color-gold)}
 
 
 :root {
-  --color-primary: #0A0A12; /* Deeper, richer nearly-black for a more premium dark mode feel */
-  --color-gold: #D4AF37;   /* Classic metallic "Vegas" gold, richer and less orange */
-  --color-gold-light: #F4E2AC; 
-  --color-gold-dark: #B59325;
-  --color-red: #A3281E;    /* Deeper, more sophisticated crimson */
-  --color-cream: #FDFBFC;  /* Cooler, cleaner off-white for better contrast */
-  --color-cream-2: #F4F1ED;
-  --color-black: #05050A;
+  --color-primary: #05050A; /* Deepest black for ultra-premium dark mode */
+  --color-gold: #C5A03A;   /* Refined, sophisticated matte gold */
+  --color-gold-light: #E8D081; 
+  --color-gold-dark: #8F7222;
+  --color-red: #8B1E14;    /* Deeper, more sophisticated crimson */
+  --color-cream: #FCFAF8;  /* Warmer, elegant off-white */
+  --color-cream-2: #F2EFEA;
+  --color-black: #08080C;
   --color-white: #FFFFFF;
   --font-display: 'Fraunces', serif;
   --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-body: 'Inter', sans-serif;
-  --radius-card: 20px;     /* Slightly rounder for modern app-like feel */
-  --radius-button: 10px;
-  --shadow-subtle: 0 4px 12px rgba(0,0,0,0.04);
-  --shadow-card: 0 8px 32px rgba(0,0,0,0.06);
-  --shadow-card-hover: 0 20px 48px rgba(0,0,0,0.12), 0 0 0 1px rgba(212, 175, 55, 0.1);
-  --shadow-glow: 0 10px 30px rgba(212, 175, 55, 0.25);
-  --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1); /* Smoother, more elegant easing */
-  --section-padding: 140px 0;
-  --container-width: 1240px; /* Slightly wider for an expansive feel */
+  --radius-card: 24px;     /* Ultra-modern smooth corners */
+  --radius-button: 12px;
+  --shadow-subtle: 0 4px 20px rgba(0,0,0,0.03);
+  --shadow-card: 0 12px 40px rgba(0,0,0,0.05);
+  --shadow-card-hover: 0 24px 60px rgba(0,0,0,0.08), 0 0 0 1px rgba(197, 160, 58, 0.15);
+  --shadow-glow: 0 12px 36px rgba(197, 160, 58, 0.3);
+  --transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1); /* Slower, buttery smooth easing */
+  --section-padding: 160px 0;
+  --container-width: 1280px; /* Expansive layout */
 }
 
 /* Glassmorphism Utilities */
@@ -314,20 +314,73 @@ nav#main-nav.scrolled{
 .trust-item{display:flex;align-items:center;gap:8px;font-family:var(--font-heading);font-size:13px;font-weight:600;color:rgba(255,255,255,0.7)}
 .trust-check{color:var(--color-gold);font-size:16px}
 .hero-image-wrap{position:relative}
-.hero-img{width:100%;height:640px;object-fit:cover;border-radius:24px;display:block;box-shadow: 0 32px 64px rgba(0,0,0,0.5);}
-.hero-float-card{
-  position:absolute;bottom:32px;left:-32px;
-  background:rgba(10, 10, 18, 0.65);
-  backdrop-filter:blur(24px);
-  -webkit-backdrop-filter:blur(24px);
-  border:1px solid rgba(255, 255, 255, 0.1);
-  border-radius:20px;padding:28px 32px;min-width:240px;
-  box-shadow: 0 16px 48px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+.hero-img{width:100%;height:640px;object-fit:cover;border-radius:24px;display:block;box-shadow: 0 40px 80px rgba(0,0,0,0.6);}
+.hero-stats-bar{
+  margin-top: 48px;
+  background: rgba(15, 15, 22, 0.5);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 32px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4), inset 0 1px 0 rgba(255,255,255,0.05);
+  position: relative;
+  z-index: 10;
 }
-.hero-float-card .card-stat{display:flex;align-items:center;gap:14px;padding:8px 0;color:var(--color-white);font-family:var(--font-heading);font-size:15px;font-weight:600; transition: var(--transition);}
-.hero-float-card .card-stat:hover{color:var(--color-gold); transform: translateX(4px);}
-.hero-float-card .card-stat .stat-icon{font-size:20px}
-.hero-float-card .card-stat+.card-stat{border-top:1px solid rgba(255,255,255,0.06);margin-top:8px;padding-top:16px}
+.hero-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: var(--transition);
+}
+.hero-stat-item:hover {
+  transform: translateY(-4px);
+}
+.hero-stat-item .stat-icon {
+  font-size: 32px;
+  background: rgba(255,255,255,0.05);
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: var(--transition);
+}
+.hero-stat-item:hover .stat-icon {
+  border-color: var(--color-gold);
+  background: rgba(197, 160, 58, 0.1);
+  box-shadow: 0 0 24px rgba(197, 160, 58, 0.2);
+}
+.hero-stat-item .stat-details {
+  display: flex;
+  flex-direction: column;
+}
+.hero-stat-item .stat-strong {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--color-gold);
+  line-height: 1;
+  margin-bottom: 4px;
+}
+.hero-stat-item .stat-light {
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.hero-stat-divider {
+  width: 1px;
+  height: 64px;
+  background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.1), transparent);
+}
 
 /* ============================
    IMPACT NUMBERS

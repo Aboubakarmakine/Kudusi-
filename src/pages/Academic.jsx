@@ -21,14 +21,14 @@ export default function Academic() {
             <div className="prose">
               <h2>What We Offer</h2>
               <p>Our Academic Support program connects students with dedicated tutors and academic advisors who are committed to helping every student reach their full potential. Whether you need help with a specific subject, college applications, or navigating financial aid — we've got you.</p>
-              <h3>Tutoring &amp; Subject Help</h3>
-              <p>Get one-on-one or group tutoring in math, science, English, history, and more — matched to your curriculum and learning pace.</p>
-              <h3>College Counseling</h3>
-              <p>From choosing the right school to writing your personal statement and applying for scholarships, our counselors walk you through every step.</p>
+              <h3>Tutoring &amp; Test Prep</h3>
+              <p>Get one-on-one or group tutoring matched to your curriculum, plus dedicated SAT/ACT and AP Test Prep to maximize your scores.</p>
+              <h3>College Counseling &amp; Essays</h3>
+              <p>From choosing the right school to our dedicated College Essay Workshops and scholarship matching, our counselors walk you through every step.</p>
+              <h3>STEM &amp; Core Enrichment</h3>
+              <p>Specialized STEM enrichment courses and targeted homework help designed to build confidence in math and sciences.</p>
               <h3>Financial Aid Navigation</h3>
-              <p>We help students and families understand FAFSA, grants, and scholarship opportunities so cost is never a barrier to higher education.</p>
-              <h3>Academic Advising</h3>
-              <p>Create a personalized academic plan with an advisor who knows your goals and can help you stay on track to achieve them.</p>
+              <p>We help students and families understand FAFSA, grants, and scholarship opportunities so cost is never a barrier.</p>
             </div>
             <img src="/assets/images/graduate-single.jpg" alt="Student working with academic tutor" loading="lazy" style={{ borderRadius: '24px', boxShadow: 'var(--shadow-card)' }} />
           </div>
