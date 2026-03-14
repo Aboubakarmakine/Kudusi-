@@ -16,12 +16,36 @@ import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Sponsor from './pages/Sponsor';
 
-// Scroll to top on route change
-function ScrollToTop() {
+function ScrollObserver() {
   const { pathname } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
+  }, [pathname]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+    );
+
+    // Use a small timeout to allow React to render the new page's DOM elements
+    const timeoutId = setTimeout(() => {
+      const elements = document.querySelectorAll('.fade-up');
+      elements.forEach((el) => observer.observe(el));
+    }, 100);
+
+    return () => {
+      clearTimeout(timeoutId);
+      observer.disconnect();
+    };
   }, [pathname]);
 
   return null;
@@ -30,7 +54,7 @@ function ScrollToTop() {
 function App() {
   return (
     <Router>
-      <ScrollToTop />
+      <ScrollObserver />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
